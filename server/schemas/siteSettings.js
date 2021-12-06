@@ -2,12 +2,17 @@ export default {
     name: 'siteSettings',
     title: 'Site Settings',
     type: 'document',
-    __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
+    // __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
     fields: [
         {
             name: 'title',
             title: 'Title',
             type: 'string',
+        },
+        {
+            name: 'description',
+            title: 'Meta Description',
+            type: 'text',
         },
         {
             name: 'primaryColor',
