@@ -4,10 +4,10 @@ import team from './schemas/team'
 import pageBuilder from './schemas/pageBuilder'
 
 
-export default () => {
-    S.list()
-        .title('Content')
-        .items([
-            ...S.documentTypeListItems()
-        ])
+export default () =>{
+  S.list()
+    .title('Base')
+    .items(
+      S.documentTypeListItems()
+    )
 }
