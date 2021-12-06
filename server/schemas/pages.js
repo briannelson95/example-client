@@ -20,29 +20,19 @@ export default {
             type: 'blockContent',
         },
         {
-            name: 'pageSubtitle',
-            title: 'Subtitle',
-            type: 'string',
-            description: 'Used for H2s or to go with CTAs',
+            name: 'pageBuilder',
+            title: 'Page Builder',
+            type: 'array',
+            of: [
+                {type: 'hero'},
+                {type: 'textWithIllustration'},
+                {type: 'callToAction'},
+                {type: 'paragraph'},
+                {type: 'gallery'},
+                {type: 'form'},
+                {type: 'video'},
+            ]
         },
-        {
-            name: 'cta',
-            title: 'CTA',
-            type: 'string',
-            description: 'Prompt a user to do something',
-            validation: Rule => Rule.max(15).warning("Try to keep this short")
-        },
-        {
-            name: 'ctaDestination',
-            title: 'CTA Destination',
-            type: 'slug',
-            description: 'Link to bring your users to',
-        },
-        {
-            name: 'content',
-            title: 'Page Content',
-            type: 'blockContent'
-        }
     ],
     preview: {
         select: {

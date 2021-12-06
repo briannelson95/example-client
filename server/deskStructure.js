@@ -14,5 +14,5 @@ export default () =>
             .documentId('siteSettings')
         ),
         S.divider(),
-        ...S.documentTypeListItems().filter(listItem => !['siteSettings'].includes(listItem.getId()))
+        ...S.documentTypeListItems().filter(listItem => !['siteSettings', 'parentPage'].includes(listItem.getId()))
     ])

@@ -24,7 +24,7 @@ export default {
             name: 'secondaryColor',
             title: 'Secondary Color',
             type: 'color',
-            description: 'Used to generate the secondart accent color for websites, press materials, etc'
+            description: 'Used to generate the secondary accent color for websites, press materials, etc'
         }
     ],
 }
