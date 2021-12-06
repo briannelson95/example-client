@@ -7,6 +7,11 @@ export default {
     title: 'Page Builder',
     fields: [
         {
+            name: 'pageTitle',
+            title: 'Page Title',
+            type: 'string',
+        },
+        {
             name: 'pageBuilder',
             title: 'Page Builder',
             type: 'array',
