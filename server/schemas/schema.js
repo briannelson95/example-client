@@ -6,6 +6,15 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import pages from './pages'
 import blockContent from './blockContent'
 import team from './team'
+import callToAction from './callToAction'
+import hero from './hero'
+import textWithIllustration from './textWithIllustration'
+import imageGallery from './imageGallery'
+import form from './form'
+import video from './video'
+import pageBuilder from './pageBuilder'
+import paragraphText from './paragraphText'
+import siteSettings from './siteSettings'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -16,7 +25,17 @@ export default createSchema({
   types: schemaTypes.concat([
     /* Your types here! */
     blockContent,
+    hero,
+    callToAction,
+    paragraphText,
+    textWithIllustration,
+    imageGallery,
+    form,
+    video,
+
     pages,
-    team
+    team,
+    pageBuilder,
+    siteSettings,
   ]),
 })
