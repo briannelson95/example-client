@@ -28,6 +28,7 @@
     "react-icons": "^4.3.1",
     "sanity-plugin-asset-source-unsplash": "^0.1.5",
     "sanity-plugin-autocomplete-tags": "^1.0.1",
+    "sanity-plugin-media-library": "^2.0.2",
     "styled-components": "^5.2.0"
   }
 }

@@ -14,7 +14,8 @@
     "@sanity/desk-tool",
     "@sanity/color-input",
     "autocomplete-tags",
-    "asset-source-unsplash"
+    "asset-source-unsplash",
+    "media-library"
   ],
   "env": {
     "development": {
