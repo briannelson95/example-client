@@ -6,13 +6,14 @@ export default {
     fields: [
         {
             name: 'title',
-            title: 'Title',
+            title: 'Site Title',
             type: 'string',
         },
         {
             name: 'description',
             title: 'Meta Description',
             type: 'text',
+            description: 'The little decription that shows up when you google a website'
         },
         {
             name: 'primaryColor',
