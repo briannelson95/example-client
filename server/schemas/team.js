@@ -11,7 +11,7 @@ export default {
             name: 'name',
             title: 'Name',
             type: 'string',
-            validation: Rule => Rule.max(90)
+            validation: Rule => Rule.required().max(96)
         },
         {
             name: 'twitter',
@@ -27,6 +27,14 @@ export default {
             title: 'Image',
             type: 'image',
             options: {hotspot: true},
+            fields: [
+                {
+                    name: 'alt',
+                    title: 'Alternative text',
+                    type: 'string',
+                    validation: Rule => Rule.required().max(25)
+                },
+            ],
         },
         
         {
