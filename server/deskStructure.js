@@ -1,6 +1,11 @@
 import S from '@sanity/desk-tool/structure-builder'
 import { IoOptions } from "react-icons/io5";
 
+const hiddenDocTypes = (listItem) =>
+  !['siteSettings', 'parentPage',].includes(
+    listItem.getId()
+  )
+
 export default () =>
   S.list()
     .title('Base')
@@ -14,5 +19,5 @@ export default () =>
             .documentId('siteSettings')
         ),
         S.divider(),
-        ...S.documentTypeListItems().filter(listItem => !['siteSettings', 'parentPage'].includes(listItem.getId()))
+        ...S.documentTypeListItems().filter(hiddenDocTypes)
     ])

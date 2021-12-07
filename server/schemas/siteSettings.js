@@ -16,6 +16,12 @@ export default {
             description: 'The little decription that shows up when you google a website'
         },
         {
+            name: 'keywords',
+            title: 'Meta Keywords',
+            type: 'tags',
+            description: 'The keywords that you can set so Google knows what your site is about.'
+        },
+        {
             name: 'primaryColor',
             title: 'Primary Color',
             type: 'color',

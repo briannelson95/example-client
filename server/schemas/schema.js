@@ -16,6 +16,7 @@ import pageBuilder from './pageBuilder'
 import paragraphText from './paragraphText'
 import siteSettings from './siteSettings'
 
+
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
