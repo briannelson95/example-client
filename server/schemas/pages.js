@@ -20,6 +20,12 @@ export default {
             type: 'blockContent',
         },
         {
+            name: 'mainImage',
+            title: 'Main Image',
+            type: 'image',
+            description: 'Used for Sanity Backend at the moment'
+        },
+        {
             name: 'pageBuilder',
             title: 'Page Builder',
             type: 'array',
@@ -38,6 +44,7 @@ export default {
         select: {
             title: 'pageTitle',
             subtitle: 'pageDescription',
+            media: 'mainImage'
         },
     },
 }

@@ -18,6 +18,7 @@
     "@sanity/base": "^2.22.3",
     "@sanity/color-input": "^2.22.3",
     "@sanity/core": "^2.22.3",
+    "@sanity/dashboard": "^2.23.0",
     "@sanity/default-layout": "^2.22.4",
     "@sanity/default-login": "^2.22.3",
     "@sanity/desk-tool": "^2.22.3",
@@ -28,6 +29,7 @@
     "react-icons": "^4.3.1",
     "sanity-plugin-asset-source-unsplash": "^0.1.5",
     "sanity-plugin-autocomplete-tags": "^1.0.1",
+    "sanity-plugin-dashboard-widget-document-list": "^0.0.13",
     "sanity-plugin-media-library": "^2.0.2",
     "styled-components": "^5.2.0"
   }

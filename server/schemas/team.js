@@ -14,6 +14,15 @@ export default {
             validation: Rule => Rule.required().max(96)
         },
         {
+            name: 'slug',
+            title: 'Slug',
+            type: 'slug',
+            options: {
+                source: 'name',
+                maxLength: 96,
+            },
+        },
+        {
             name: 'twitter',
             title: 'Twitter Url',
             type: 'url',
