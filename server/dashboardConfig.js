@@ -1,8 +1,8 @@
 export default {
     widgets: [
-        {
-            name: 'structure-menu',
-        },
+        // {
+        //     name: 'structure-menu',
+        // },
         {
             name: 'document-list',
             options: {
