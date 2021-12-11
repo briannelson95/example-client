@@ -4,18 +4,6 @@ export default {
         //     name: 'structure-menu',
         // },
         {
-            name: 'document-list',
-            options: {
-                title: 'Last Edited Post',
-                types: ['posts'],
-                order: '_updatedAt desc'
-            },
-            layout: {
-                width: 'auto',
-                height: 'small'
-            }
-        },
-        {
             name: 'document-list', 
             options: {
                 title: 'Pages', 
@@ -23,7 +11,32 @@ export default {
                 types: ['page'],
             },
             layout: {
+                width: 'small',
+                height: 'small'
+            }
+        },
+        {
+            name: 'document-list',
+            options: {
+                title: 'Last Edited Blog Post',
+                types: ['posts'],
+                order: '_updatedAt desc'
+            },
+            layout: {
                 width: 'medium',
+                height: 'small'
+            }
+        },
+        
+        {
+            name: 'document-list',
+            options: {
+                title: 'Team',
+                types: ['team'],
+                order: 'name asc',
+            },
+            layout: {
+                width: 'small',
                 height: 'small'
             }
         },
@@ -37,7 +50,7 @@ export default {
         {
             name: 'project-users',
             layout: {
-                width: 'full',
+                width: 'auto',
                 height: 'small'
             }
         },

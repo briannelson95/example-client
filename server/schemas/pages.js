@@ -2,7 +2,7 @@ import { IoDocuments } from 'react-icons/io5'
 
 export default {
     name: 'page',
-    title: 'Pages',
+    title: 'All Pages',
     icon: IoDocuments,
     type: 'document',
     fields: [
@@ -44,7 +44,7 @@ export default {
         select: {
             title: 'pageTitle',
             subtitle: 'pageDescription',
-            media: 'mainImage'
+            media: 'image'
         },
     },
 }

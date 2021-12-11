@@ -1,5 +1,5 @@
 import S from '@sanity/desk-tool/structure-builder'
-import { IoOptions } from "react-icons/io5";
+import { IoOptions, IoHome } from "react-icons/io5";
 
 const hiddenDocTypes = (listItem) =>
   !['siteSettings', 'parentPage',].includes(
@@ -19,5 +19,13 @@ export default () =>
             .documentId('siteSettings')
         ),
         S.divider(),
+      S.listItem()
+          .title('Frontpage')
+          .icon(IoHome)
+          .child(
+            S.document()
+              .schemaType('page')
+              .documentId('frontpage')
+          ),
         ...S.documentTypeListItems().filter(hiddenDocTypes)
     ])
