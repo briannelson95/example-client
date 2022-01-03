@@ -1,10 +1,10 @@
-import { IoDocumentText } from 'react-icons/io5'
+import { IoPencil } from 'react-icons/io5'
 
 export default {
     name: 'posts',
     title: 'Posts',
     type: 'document',
-    icon: IoDocumentText,
+    icon: IoPencil,
     fields: [
         {
             name: 'title',

@@ -5,7 +5,7 @@ export default {
     fields: [
         {
             name: 'linkText',
-            title: 'Link',
+            title: 'Link Text',
             type: 'string',
         },
         {
