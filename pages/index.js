@@ -17,6 +17,9 @@ export default function Home({ data }) {
         <h1 className="text-6xl font-bold" style={{color: data.primaryColor.hex}}>
           {data.title}
         </h1>
+        <p style={{backgroundColor: data.secondaryColor.hex, padding: '1rem'}}>
+          {data.description}
+        </p>
 
         <p className="mt-3 text-2xl">
           Get started by editing{' '}
