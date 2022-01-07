@@ -2,7 +2,7 @@ import { IoDocuments } from 'react-icons/io5'
 
 export default {
     name: 'page',
-    title: 'All Pages',
+    title: 'Pages',
     icon: IoDocuments,
     type: 'document',
     fields: [
@@ -13,6 +13,15 @@ export default {
             description: 'Used for meta data and some H1s',
             validation: Rule => Rule.max(120).warning("A title shouldn't be more than 120 characters"),
             validation: Rule => Rule.required()
+        },
+        {
+            name: 'slug',
+            title: 'Slug',
+            type: 'string',
+            options: {
+                source: 'title',
+                maxLength: 96 
+            }
         },
         {
             name: 'pageDescription',

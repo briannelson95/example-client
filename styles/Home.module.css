@@ -114,3 +114,11 @@
     flex-direction: column;
   }
 }
+
+.button {
+  background-color: #0070f3;
+  color: #eaeaea;
+  padding: .5rem;
+  border-radius: 5px;
+  margin: 1rem;
+}
