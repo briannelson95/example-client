@@ -1,8 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import client from '../lib/config'
+import { frontPageQuery, siteSettings } from '../lib/queries'
 
-export default function Home() {
+export default function Home({ data }) {
+  console.log(data.primaryColor.hex)
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
@@ -11,11 +14,8 @@ export default function Home() {
       </Head>
 
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
+        <h1 className="text-6xl font-bold" style={{color: data.primaryColor.hex}}>
+          {data.title}
         </h1>
 
         <p className="mt-3 text-2xl">
@@ -83,4 +83,12 @@ export default function Home() {
   )
 }
 
+export const getServerSideProps = async function (context) {
 
+  const data = await client.fetch(siteSettings)
+  // const siteData = await client.fetch(siteSettings)
+
+  return {
+    props: { data },
+  }
+}
