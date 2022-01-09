@@ -1,34 +1,32 @@
 export default function (req, res) {
     require('dotenv').config()
 
-    let nodemialer = require('nodemailer')
-    const transporter = nodemialer.createTransport({
-        port: 465,
-        host: "smtp.gmail.com",
-        auth: {
-            user: 'dev.briannelson@gmail.com',
-            pass: process.env.password
-        },
-        secure: true
-    })
-
+    let nodemailer = require('nodemailer')
+    const transporter = nodemailer.createTransport({
+      port: 465,     
+      host: "smtp.gmail.com",
+         auth: {
+              user: 'dev.briannelson@gmail.com',
+              pass: process.env.password,
+           },
+      secure: true,
+    });
+    
     const mailData = {
         from: 'dev.briannelson@gmail.com',
-        to: '14nelsonb@gmail.com',
-        subject: `Message From Website ${req.body.name}`,
-        text: req.body.message,
-        html: <div>{req.body.message}</div>
-
+        to: 'briannelsonfilms@gmail.com',
+        subject: `Message From ${req.body.name}`,
+        text: req.body.message + " | Sent from: " + req.body.email,
+        html: `<div>${req.body.message}</div><p>Sent from: ${req.body.email}</p>`
     }
-
+  
     transporter.sendMail(mailData, function (err, info) {
-        if (err) 
-            console.log(err)
+        if(err)
+          console.log(err)
         else
-            console.log(info)
+          console.log(info);
     })
-
-    res.status(200)
-    console.log(req.body)
-    res.send()
-}
+  
+    // console.log(req.body)
+    res.send('success')
+  }

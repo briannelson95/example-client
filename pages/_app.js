@@ -2,13 +2,27 @@ import Layout from '../components/Layout'
 import client from '../lib/config'
 import { siteSettings } from '../lib/queries'
 import '../styles/globals.css'
+import { Toaster } from 'react-hot-toast'
 
 function MyApp({ Component, pageProps, data }) {
   // console.log(data)
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      <Layout>
+        <Toaster 
+          containerStyle={{
+            top: 50
+          }}
+          // toastOptions={{
+          //   style: {
+          //     marginTop: '3rem'
+          //   }
+          // }}
+        />
+        <Component {...pageProps} />
+      </Layout>
+      
+    </>
   )
 }
 
