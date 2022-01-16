@@ -43,7 +43,7 @@ export default function Home({ data }) {
 
 export const getServerSideProps = async function (context) {
 
-  const data = await client.fetch(frontPageSettings)
+  const data = await client.fetch(frontPageQuery)
 
   return {
     props: { data },

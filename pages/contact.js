@@ -7,6 +7,7 @@ export default function Home() {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
+    const [optionOne, setOptionOne] = useState('')
     const [submitted, setSubmitted] = useState(false)
   
     const handleSubmit = (e) => {
@@ -15,6 +16,7 @@ export default function Home() {
         let data = {
             name,
             email,
+            optionOne,
             message
         }
   
@@ -48,6 +50,13 @@ export default function Home() {
             <formgroup className={styles.inputGroup} >
                 <label htmlFor='email'>Email</label>
                 <input type='email' value={email} onChange={(e)=>{setEmail(e.target.value)}} name='email' className={styles.inputField} />
+            </formgroup>
+
+            <formgroup className={styles.inputGroup} >
+                <label htmlFor='services'>Service:</label>
+                <select id='services' name='services'>
+                    <option value={optionOne} onChange={(e)=>{setOptionOne(e.target.value)}}>Option One</option>
+                </select>
             </formgroup>
     
             <formgroup className={styles.inputGroup} >
