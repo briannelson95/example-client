@@ -16,6 +16,7 @@ import pageBuilder from './pageBuilder'
 import paragraphText from './paragraphText'
 import siteSettings from './siteSettings'
 import posts from './posts'
+import projects from './projects'
 
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -39,6 +40,7 @@ export default createSchema({
     team,
     pageBuilder,
     siteSettings,
+    projects,
     posts,
   ]),
 })

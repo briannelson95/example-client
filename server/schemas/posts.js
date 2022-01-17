@@ -1,10 +1,10 @@
-import { IoPencil } from 'react-icons/io5'
+import { IoShare } from 'react-icons/io5'
 
 export default {
     name: 'posts',
-    title: 'Posts',
+    title: 'Blog',
     type: 'document',
-    icon: IoPencil,
+    icon: IoShare,
     fields: [
         {
             name: 'title',
