@@ -7,11 +7,11 @@ import Link from 'next/link'
 import { urlForImage } from '../lib/sanity'
 
 export default function Home({ data }) {
-  console.log(data)
+  // console.log(data)
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
-        <title>Create Next App</title>
+        <title>{data.pageTitle}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -34,7 +34,7 @@ export default function Home({ data }) {
           </button>
         </div>
         <div>
-          {data.pageBuilder[3].copy}
+          {data.pageBuilder[2].copy}
         </div>
       </main>
     </div>

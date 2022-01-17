@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "example-client"
-  },
   "api": {
-    "projectId": "1ruc8rxn",
+    "projectId": "ji0xsof5",
     "dataset": "production"
+  },
+  "project": {
+    "name": "Battle Bear"
   },
   "plugins": [
     "@sanity/base",
