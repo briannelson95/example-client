@@ -1,5 +1,5 @@
 .container {
-  padding: 0 2rem;
+  padding: 1rem 2rem;
 }
 
 .main {
@@ -10,6 +10,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.hero {
+  background-color: #0070f3;
+  width: 100%;
+  height: 40vh;
 }
 
 .footer {

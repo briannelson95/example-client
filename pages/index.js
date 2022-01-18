@@ -9,32 +9,17 @@ import { urlForImage } from '../lib/sanity'
 export default function Home({ data }) {
   // console.log(data)
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Head>
-        <title>{data.pageTitle}</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div className={styles.container}>
+      <Head></Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          {/* {data.title} */}
-          {data.pageBuilder[0].heading}
-        </h1>
-        {/* <p style={{backgroundColor: data.secondaryColor.hex, padding: '1rem'}}>
-          {data.description}
-        </p> */}
-        <div style={{padding: `1rem`}}>
-          <h3>
-            {data.pageBuilder[0].tagline}
-          </h3>
-          <button className={styles.button}>
-            <Link href={data.pageBuilder[1].url}>
-              {data.pageBuilder[1].linkText}
-            </Link>
-          </button>
+      <main>
+        <div className={styles.hero}>
+          <h2 className="text-4xl font-bold">Take your minifigs to the next level</h2>
         </div>
-        <div>
-          {data.pageBuilder[2].copy}
+        <div className='space-y-4'>
+          <div className='w-96 bg-slate-500 text-sky-50 shadow rounded'>
+            w-96
+          </div>
         </div>
       </main>
     </div>
