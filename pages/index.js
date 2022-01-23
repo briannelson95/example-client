@@ -13,8 +13,9 @@ export default function Home({ data }) {
       <Head></Head>
 
       <main>
-        <div className={styles.hero}>
-          <h2 className="text-4xl font-bold">Take your minifigs to the next level</h2>
+        <div className='container mx-auto bg-sky-400 rounded h-48 grid grid-cols-3 gap-4'>
+          <h2 className="text-center text-4xl font-bold">Take your minifigs to the next level</h2>
+          <h2 className='col-span-2'>Another header</h2>
         </div>
         <div className='space-y-4'>
           <div className='w-96 bg-slate-500 text-sky-50 shadow rounded'>
