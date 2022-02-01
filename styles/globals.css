@@ -2,19 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+/*css reset*/
+
 html,
-body {
+body,p,a,ul,li {
   padding: 0;
   margin: 0;
+  text-decoration: none;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
   color: inherit;
-  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.blue-button {
+  background-color: #18A0FB;
+  color: #ffffff;
+  border-radius: 6px;
+  width: 130px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-button:hover {
+  background-color: #ffffff;
+  color: #18A0FB;
+  border: 1px solid #18A0FB;
 }
