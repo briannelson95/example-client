@@ -18,8 +18,6 @@ export default {
             of: [
                 {type: 'hero'},
                 {type: 'textWithIllustration'},
-                {type: 'callToAction'},
-                {type: 'paragraph'},
                 {type: 'gallery'},
                 {type: 'form'},
                 {type: 'video'},

@@ -14,6 +14,12 @@ export default {
             type: 'string',
         },
         {
+            name: 'cta',
+            title: 'Call to Action',
+            type: 'callToAction',
+            description: 'What do you want visitors to do?'
+        },
+        {
             name: 'image',
             title: 'Image',
             type: 'image',
@@ -26,6 +32,7 @@ export default {
                 },
             ]
         },
+        
 
     ],
 }

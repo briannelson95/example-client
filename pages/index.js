@@ -7,10 +7,12 @@ import Link from 'next/link'
 import { urlForImage } from '../lib/sanity'
 
 export default function Home({ data }) {
-  console.log(data.pageBuilder)
+  console.log(data)
   return (
     <div>
-      <Head></Head>
+      <Head>
+        <title>{data.pageTitle}</title>
+      </Head>
 
       <main>
         <div className={styles.hero}>
@@ -18,9 +20,28 @@ export default function Home({ data }) {
             <h2 className={styles.title}>
               {data.pageBuilder[0].tagline} 
             </h2>
-            <button className='blue-button'>{data.pageBuilder[1].linkText}</button>
+            <Link 
+              href={data.pageBuilder[0].cta.url}
+              target="_blank"
+            >
+              <button className='blue-button'>{data.pageBuilder[0].cta.linkText}</button>
+            </Link>
           </div>
         </div>
+        <section className={styles.body}>
+          <div className={styles.bodyText}>
+            <h3>{data.pageBuilder[0].heading}</h3>
+            <p>{data.pageBuilder[1].copy}</p>
+          </div>
+          <div className={styles.row}>
+            <div className={styles.card}>
+
+            </div>
+            <div className={styles.card}>
+
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   )

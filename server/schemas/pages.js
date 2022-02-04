@@ -41,8 +41,7 @@ export default {
             of: [
                 {type: 'hero'},
                 {type: 'textWithIllustration'},
-                {type: 'callToAction'},
-                {type: 'paragraph'},
+                {type: 'blockContent'},
                 {type: 'gallery'},
                 {type: 'form'},
                 {type: 'video'},
