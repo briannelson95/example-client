@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "example-client"
-  },
   "api": {
-    "projectId": "1ruc8rxn",
+    "projectId": "gj0k6yco",
     "dataset": "production"
+  },
+  "project": {
+    "name": "Brian Nelson Films"
   },
   "plugins": [
     "@sanity/base",

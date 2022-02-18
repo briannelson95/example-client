@@ -10,6 +10,11 @@ export default {
             type: 'string',
         },
         {
+            name: 'logo',
+            title: 'Logo',
+            type: 'image'
+        },
+        {
             name: 'description',
             title: 'Meta Description',
             type: 'text',
